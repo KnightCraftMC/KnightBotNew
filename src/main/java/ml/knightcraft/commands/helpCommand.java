@@ -21,6 +21,7 @@ public class helpCommand extends ListenerAdapter {
             eb.addField("Help", "The menu that you are currently looking at", false);
 
             eb.addField("Page 2", "Next Page", false);
+            eb.addField("This thing types slow", "Im on laptop", false);
             e.getChannel().sendMessage(eb.build()).queue(msg -> {
                 msg.addReaction("➡️").queue();
             });
