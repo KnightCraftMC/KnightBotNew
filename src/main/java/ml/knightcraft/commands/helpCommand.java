@@ -15,13 +15,10 @@ public class helpCommand extends ListenerAdapter {
             eb.setTitle("Command and Features help");
             eb.setDescription("Page 1");
             eb.setColor(Color.RED);
-            eb.addField("Creator", "Hoptilic", true);
-            eb.addField("Owner", "Vlady", true);
-            eb.addBlankField(false);
             eb.addField("Help", "The menu that you are currently looking at", false);
-
+            eb.addField("Creator", "The creator is Hoptilic", false);
+            eb.addBlankField(false);
             eb.addField("Page 2", "Next Page", false);
-            eb.addField("This thing types slow", "Im on laptop", false);
             e.getChannel().sendMessage(eb.build()).queue(msg -> {
                 msg.addReaction("➡️").queue();
             });
